@@ -1,0 +1,217 @@
+/* =======================
+   GLOBAL PAGE
+======================= */
+.home-page {
+  padding: 20px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* =======================
+   HEADER
+======================= */
+.home-top {
+  margin-bottom: 20px;
+}
+
+.home-top h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #111827;
+}
+
+.home-top p {
+  margin: 5px 0 0;
+  color: #6b7280;
+}
+
+/* =======================
+   BALANCE SECTION
+======================= */
+.balance-row {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.balance-card {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.balance-card:hover {
+  transform: translateY(-2px);
+}
+
+.balance-card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.balance-card h2 {
+  margin: 8px 0 0;
+  font-size: 22px;
+}
+
+.balance-card.owe {
+  border-left: 5px solid #ef4444;
+}
+
+.balance-card.get {
+  border-left: 5px solid #22c55e;
+}
+
+/* =======================
+   SECTION
+======================= */
+.section {
+  margin-top: 25px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  color: #111827;
+}
+
+/* Button */
+.section-header button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.section-header button:hover {
+  background: #4338ca;
+}
+
+/* =======================
+   GROUPS
+======================= */
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.group-card {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.group-card:hover {
+  transform: translateY(-3px);
+}
+
+.group-card .icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.group-card h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #111827;
+}
+
+.group-card p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* =======================
+   EXPENSE LIST
+======================= */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.expense-item {
+  background: white;
+  padding: 14px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.2s ease;
+}
+
+.expense-item:hover {
+  transform: translateY(-2px);
+}
+
+.expense-title {
+  font-weight: 600;
+  color: #111827;
+}
+
+.expense-sub {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 3px;
+}
+
+/* CATEGORY TAG */
+.expense-category {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+/* PRICE */
+.expense-price {
+  font-weight: bold;
+  color: #111827;
+}
+
+/* =======================
+   EMPTY STATE
+======================= */
+.empty-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 600px) {
+  .balance-row {
+    flex-direction: column;
+  }
+
+  .groups-grid {
+    grid-template-columns: 1fr;
+  }
+}
